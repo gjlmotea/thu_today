@@ -1,12 +1,16 @@
-<form [formGroup]="myForm" (change)="formChanged()">
-  <div>我現在幾歲：<input type="number" formControlName="age"></div>
-  <div>我預計活到幾歲：<input type="number" formControlName="ageLimit"></div>
-  <div>初始本金：<input type="number" formControlName="moneyNow"></div>
-  <div>投資年化利率：<input type="number" formControlName="moneyRate"> %</div>
-  <div>每月固定開銷：<input type="number" formControlName="spendAmount"></div>
-  <div>每年通膨率：<input type="number" formControlName="spendRate"> %</div>
-  <div>每月固定收入：<input type="number" formControlName="incomeAmount"></div>
-  <div>每年收率提升率：<input type="number" formControlName="incomeRate"></div>
-  <div>幾歲開始工作：<input type="number" formControlName="ageWorkStart"> %</div>
-  <div>幾歲不工作了：<input type="number" formControlName="ageWorkEnd"></div>
-</form>
+<div class="container">
+  <form [formGroup]="myForm" (change)="formChanged()" class="btn-group">
+    <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <label class=" col">我現在幾歲：<input type="number" class="form-control-sm" formControlName="age"></label>
+        <label class=" col">我預計活到幾歲：<input type="number" class="form-control-sm" formControlName="ageLimit"></label>
+        <label class=" col">初始本金：<input type="number" class="form-control-sm" formControlName="moneyNow"></label>
+        <label class=" col">投資年化利率：<input type="number" class="form-control-sm" formControlName="moneyRate"> %</label>
+        <label class=" col">每月固定開銷：<input type="number" class="form-control-sm" formControlName="spendAmount"></label>
+        <label class=" col">每年通膨率：<input type="number" class="form-control-sm" formControlName="spendRate"> %</label>
+        <label class=" col">每月固定收入：<input type="number" class="form-control-sm" formControlName="incomeAmount"></label>
+        <label class=" col">每年收率提升率：<input type="number" class="form-control-sm" formControlName="incomeRate"></label>
+        <label class=" col">幾歲開始工作：<input type="number" class="form-control-sm" formControlName="ageWorkStart"> %</label>
+        <label class=" col">幾歲不工作了：<input type="number" class="form-control-sm" formControlName="ageWorkEnd"></label>
+    </div>
+  </form>
+</div>
