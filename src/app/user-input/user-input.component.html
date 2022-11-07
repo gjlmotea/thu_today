@@ -1,16 +1,16 @@
 <div class="container">
     <form [formGroup]="myForm" (change)="formChanged()" class="btn-group">
         <div class="row">
-            <div class="col-6 col-sm-6 col-lg-3"><label class="w-100 py-2">我現在幾歲：<input type="number" class="form-control form-control-sm" formControlName="age"></label></div>
-            <div class="col-6 col-sm-6 col-lg-3"><label class="w-100 py-2">我預計活到幾歲：<input type="number" class="form-control form-control-sm" formControlName="ageLimit"></label></div>
-            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2">初始本金：<input type="number" class="form-control form-control-sm" formControlName="moneyNow"></label></div>
-            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2">投資年化報酬率 (%)：<input type="number" class="form-control form-control-sm" formControlName="moneyRate"></label></div>
-            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2">每月固定開銷：<input type="number" class="form-control form-control-sm" formControlName="spendAmount"></label></div>
-            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2">每年通膨率 (%)：<input type="number" class="form-control form-control-sm" formControlName="spendRate"></label></div>
-            <div class="col-6 col-sm-3 col-lg-3"><label class="w-100 py-2">幾歲開始工作：<input type="number" class="form-control form-control-sm" formControlName="ageWorkStart"></label></div>
-            <div class="col-6 col-sm-3 col-lg-3"><label class="w-100 py-2">幾歲不工作了：<input type="number" class="form-control form-control-sm" formControlName="ageWorkEnd"></label></div>
-            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2">每月固定收入：<input type="number" class="form-control form-control-sm" formControlName="incomeAmount"></label></div>
-            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2">每年收率提升率 (%)：<input type="number" class="form-control form-control-sm" formControlName="incomeRate"></label></div>
+            <div class="col-6 col-sm-3 col-lg-3"><label class="w-100 py-2 small">我現在幾歲：<input type="number" class="form-control form-control-sm" formControlName="age"></label></div>
+            <div class="col-6 col-sm-3 col-lg-3"><label class="w-100 py-2 small">預計活到幾歲：<input type="number" class="form-control form-control-sm" formControlName="ageLimit"></label></div>
+            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2 small">初始本金：<input type="number" class="form-control form-control-sm" formControlName="moneyNow"></label></div>
+            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2 small">投資年化報酬率 (%)：<input type="number" class="form-control form-control-sm" formControlName="moneyRate"></label></div>
+            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2 small">每月固定開銷：<input type="number" class="form-control form-control-sm" formControlName="spendAmount"></label></div>
+            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2 small">每年通膨率 (%)：<input type="number" class="form-control form-control-sm" formControlName="spendRate"></label></div>
+            <div class="col-6 col-sm-3 col-lg-3"><label class="w-100 py-2 small">幾歲開始工作：<input type="number" class="form-control form-control-sm" formControlName="ageWorkStart"></label></div>
+            <div class="col-6 col-sm-3 col-lg-3"><label class="w-100 py-2 small">幾歲不工作了：<input type="number" class="form-control form-control-sm" formControlName="ageWorkEnd"></label></div>
+            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2 small">每月固定收入：<input type="number" class="form-control form-control-sm" formControlName="incomeAmount"></label></div>
+            <div class="col-12 col-sm-6 col-lg-3"><label class="w-100 py-2 small">每年收率提升率 (%)：<input type="number" class="form-control form-control-sm" formControlName="incomeRate"></label></div>
         </div>
     </form>
 </div>
