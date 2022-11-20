@@ -7,7 +7,7 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'THU Today!!';
+  title = 'THU Today';
 
   constructor() {
   }
