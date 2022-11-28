@@ -8,11 +8,12 @@ import { FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   title = 'THU Today';
+  fv: Object = {};
 
   constructor() {
   }
 
   formChange(fg : FormGroup) {
-    console.log('formChange', fg.value)
+    this.fv = fg.value;
   }
 }
