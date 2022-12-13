@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { UserForm } from './user-input/user-input.component';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   title = 'THU Today';
-  fv: Object = {};
+  fv = {} as UserForm;
 
   constructor() {
   }

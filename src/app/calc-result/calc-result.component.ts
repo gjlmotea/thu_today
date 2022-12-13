@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { UserForm } from '../user-input/user-input.component';
 
 @Component({
   selector: 'app-calc-result',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./calc-result.component.css']
 })
 export class CalcResultComponent implements OnInit {
-  @Input() formValues: Object = {};
+  @Input() formValues = {} as UserForm;
   constructor() { }
 
   ngOnInit(): void {

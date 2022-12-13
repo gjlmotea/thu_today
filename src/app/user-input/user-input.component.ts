@@ -9,9 +9,9 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class UserInputComponent implements OnInit {
   @Output() public userFormChange = new EventEmitter<FormGroup>();
 
-  userForm = this.fb.group({
-    name: ['勇者一號', [Validators.required]],
-    age: [25, [Validators.required, Validators.min(5), Validators.max(120)]],
+  userForm = this.fb.group<UserForm>({
+    // age: [25, [Validators.required, Validators.min(5), Validators.max(120)]],
+    age: 25,
     ageLimit: 125,
     moneyNow: 3000000,
     moneyRate: 7, // return rate
@@ -34,16 +34,16 @@ export class UserInputComponent implements OnInit {
     this.userFormChange.emit(this.userForm);
   }
 }
-//
-// export interface UserForm {
-//   age: number
-//   ageLimit: number
-//   moneyNow: number
-//   moneyRate: number
-//   spendAmount: number
-//   spendRate: number
-//   incomeAmount: number,
-//   incomeRate: number,
-//   ageWorkStart: number,
-//   ageWorkEnd: number,
-// }
+
+export interface UserForm {
+  age: number
+  ageLimit: number
+  moneyNow: number
+  moneyRate: number
+  spendAmount: number
+  spendRate: number
+  incomeAmount: number
+  incomeRate: number
+  ageWorkStart: number
+  ageWorkEnd: number
+}
